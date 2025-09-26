@@ -1,0 +1,17 @@
+# docker-compose.yml
+version: '3.8'
+services:
+  cbdri:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./scripts:/app/scripts
+      - ./notebooks:/app/notebooks
+      - ./models:/app/models
+      - ./docs:/app/docs
+    ports:
+      - "8888:8888"
+    environment:
+      - PYTHONPATH=/app
+    # 启动后自动打开 Jupyter Lab
+    command: jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser --ServerApp.token='' --ServerApp.password=''

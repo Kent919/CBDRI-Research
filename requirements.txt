@@ -1,0 +1,17 @@
+# requirements.txt
+numpy
+matplotlib
+seaborn
+pandas
+duckdb
+xgboost
+hmmlearn
+scikit-learn
+jupyterlab
+notebook
+joblib
+openpyxl>=3.0.0
+joblib>=1.2.0
+tshark  # 用于真实流量解析
+jupyter
+pandoc
