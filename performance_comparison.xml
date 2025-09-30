@@ -5,179 +5,187 @@
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
         
-        <!-- 标题 -->
-        <mxCell id="title" value="CBDRI与基线模型性能对比" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="300" y="20" width="200" height="30" as="geometry"/>
+        <!-- 主标题 -->
+        <mxCell id="title" value="CBDRI与基线模型性能对比" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="250" height="30" as="geometry"/>
         </mxCell>
         
-        <!-- 坐标轴 -->
-        <mxCell id="y_axis" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="80" y="80" width="10" height="300" as="geometry"/>
+        <!-- 三个子图区域 -->
+        
+        <!-- MSE 子图 -->
+        <mxCell id="mse_frame" value="" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#cccccc;" vertex="1" parent="1">
+          <mxGeometry x="50" y="70" width="220" height="180" as="geometry"/>
         </mxCell>
         
-        <mxCell id="x_axis" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="80" y="380" width="600" height="10" as="geometry"/>
+        <mxCell id="mse_title" value="预测误差 (MSE)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="75" width="220" height="20" as="geometry"/>
         </mxCell>
         
-        <!-- Y轴标签 -->
-        <mxCell id="y_label" value="性能指标值" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;rotation=-90;" vertex="1" parent="1">
-          <mxGeometry x="40" y="230" width="80" height="20" as="geometry"/>
+        <!-- MSE 柱状图 -->
+        <mxCell id="mse_checklist" value="0.158" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#4A90E2;strokeColor=#2D6DB5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="135" width="40" height="105" as="geometry"/>
         </mxCell>
         
-        <!-- X轴标签 -->
-        <mxCell id="x_label" value="评估指标" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="350" y="410" width="80" height="20" as="geometry"/>
+        <mxCell id="mse_dpi" value="0.165" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#50E3C2;strokeColor=#2BB197;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="130" y="130" width="40" height="110" as="geometry"/>
         </mxCell>
         
-        <!-- 指标标签 -->
-        <mxCell id="mse_label" value="MSE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="160" y="395" width="40" height="20" as="geometry"/>
+        <mxCell id="mse_hmm" value="0.500" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#F5A623;strokeColor=#D4890F;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="180" y="70" width="40" height="170" as="geometry"/>
         </mxCell>
         
-        <mxCell id="fnr_label" value="FNR(%)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="280" y="395" width="50" height="20" as="geometry"/>
+        <mxCell id="mse_cbdri" value="0.090" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#BD10E0;strokeColor=#8A0BA6;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="170" width="40" height="70" as="geometry"/>
         </mxCell>
         
-        <mxCell id="cost_label" value="合规成本" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="410" y="395" width="60" height="20" as="geometry"/>
+        <!-- MSE 模型标签 -->
+        <mxCell id="mse_label1" value="清单法" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="245" width="40" height="15" as="geometry"/>
         </mxCell>
         
-        <!-- 清单法柱状图 -->
-        <mxCell id="checklist_mse" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#4A90E2;strokeColor=#2D6DB5;" vertex="1" parent="1">
-          <mxGeometry x="140" y="230" width="40" height="150" as="geometry"/>
+        <mxCell id="mse_label2" value="DPI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="130" y="245" width="40" height="15" as="geometry"/>
         </mxCell>
         
-        <mxCell id="checklist_fnr" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#4A90E2;strokeColor=#2D6DB5;" vertex="1" parent="1">
-          <mxGeometry x="260" y="140" width="40" height="240" as="geometry"/>
+        <mxCell id="mse_label3" value="HMM" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="180" y="245" width="40" height="15" as="geometry"/>
         </mxCell>
         
-        <mxCell id="checklist_cost" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#4A90E2;strokeColor=#2D6DB5;" vertex="1" parent="1">
-          <mxGeometry x="380" y="80" width="40" height="300" as="geometry"/>
+        <mxCell id="mse_label4" value="CBDRI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="265" width="40" height="15" as="geometry"/>
         </mxCell>
         
-        <!-- DPI+阈值法柱状图 -->
-        <mxCell id="dpi_mse" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#50E3C2;strokeColor=#2BB197;" vertex="1" parent="1">
-          <mxGeometry x="190" y="215" width="40" height="165" as="geometry"/>
+        <!-- FNR 子图 -->
+        <mxCell id="fnr_frame" value="" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#cccccc;" vertex="1" parent="1">
+          <mxGeometry x="300" y="70" width="220" height="180" as="geometry"/>
         </mxCell>
         
-        <mxCell id="dpi_fnr" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#50E3C2;strokeColor=#2BB197;" vertex="1" parent="1">
-          <mxGeometry x="310" y="260" width="40" height="120" as="geometry"/>
+        <mxCell id="fnr_title" value="假阴性率 (%)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="75" width="220" height="20" as="geometry"/>
         </mxCell>
         
-        <mxCell id="dpi_cost" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#50E3C2;strokeColor=#2BB197;" vertex="1" parent="1">
-          <mxGeometry x="430" y="60" width="40" height="320" as="geometry"/>
+        <!-- FNR 柱状图 -->
+        <mxCell id="fnr_checklist" value="23.7" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#4A90E2;strokeColor=#2D6DB5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="330" y="100" width="40" height="140" as="geometry"/>
         </mxCell>
         
-        <!-- 静态HMM柱状图 -->
-        <mxCell id="hmm_mse" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#F5A623;strokeColor=#D4890F;" vertex="1" parent="1">
-          <mxGeometry x="240" y="80" width="40" height="300" as="geometry"/>
+        <mxCell id="fnr_dpi" value="8.2" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#50E3C2;strokeColor=#2BB197;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="380" y="160" width="40" height="80" as="geometry"/>
         </mxCell>
         
-        <mxCell id="hmm_fnr" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#F5A623;strokeColor=#D4890F;" vertex="1" parent="1">
-          <mxGeometry x="360" y="100" width="40" height="280" as="geometry"/>
+        <mxCell id="fnr_hmm" value="49.7" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#F5A623;strokeColor=#D4890F;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="430" y="70" width="40" height="170" as="geometry"/>
         </mxCell>
         
-        <mxCell id="hmm_cost" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#F5A623;strokeColor=#D4890F;" vertex="1" parent="1">
-          <mxGeometry x="480" y="120" width="40" height="260" as="geometry"/>
+        <mxCell id="fnr_cbdri" value="6.5" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#BD10E0;strokeColor=#8A0BA6;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="380" y="170" width="40" height="70" as="geometry"/>
         </mxCell>
         
-        <!-- CBDRI柱状图 -->
-        <mxCell id="cbdri_mse" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#BD10E0;strokeColor=#8A0BA6;" vertex="1" parent="1">
-          <mxGeometry x="290" y="302" width="40" height="78" as="geometry"/>
+        <!-- FNR 模型标签 -->
+        <mxCell id="fnr_label1" value="清单法" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="330" y="245" width="40" height="15" as="geometry"/>
         </mxCell>
         
-        <mxCell id="cbdri_fnr" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#BD10E0;strokeColor=#8A0BA6;" vertex="1" parent="1">
-          <mxGeometry x="410" y="320" width="40" height="60" as="geometry"/>
+        <mxCell id="fnr_label2" value="DPI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="245" width="40" height="15" as="geometry"/>
         </mxCell>
         
-        <mxCell id="cbdri_cost" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#BD10E0;strokeColor=#8A0BA6;" vertex="1" parent="1">
-          <mxGeometry x="530" y="334" width="40" height="46" as="geometry"/>
+        <mxCell id="fnr_label3" value="HMM" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="430" y="245" width="40" height="15" as="geometry"/>
         </mxCell>
         
-        <!-- 数值标签 -->
-        <mxCell id="checklist_mse_val" value="0.158" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="140" y="385" width="40" height="20" as="geometry"/>
+        <mxCell id="fnr_label4" value="CBDRI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="380" y="265" width="40" height="15" as="geometry"/>
         </mxCell>
         
-        <mxCell id="checklist_fnr_val" value="23.7" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="260" y="385" width="40" height="20" as="geometry"/>
+        <!-- 成本子图 -->
+        <mxCell id="cost_frame" value="" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#cccccc;" vertex="1" parent="1">
+          <mxGeometry x="550" y="70" width="220" height="180" as="geometry"/>
         </mxCell>
         
-        <mxCell id="checklist_cost_val" value="1.00" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="380" y="385" width="40" height="20" as="geometry"/>
+        <mxCell id="cost_title" value="合规成本 (相对)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="550" y="75" width="220" height="20" as="geometry"/>
         </mxCell>
         
-        <mxCell id="dpi_mse_val" value="0.165" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="190" y="385" width="40" height="20" as="geometry"/>
+        <!-- 成本柱状图 -->
+        <mxCell id="cost_checklist" value="1.00" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#4A90E2;strokeColor=#2D6DB5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="580" y="80" width="40" height="160" as="geometry"/>
         </mxCell>
         
-        <mxCell id="dpi_fnr_val" value="8.2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="310" y="385" width="40" height="20" as="geometry"/>
+        <mxCell id="cost_dpi" value="1.11" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#50E3C2;strokeColor=#2BB197;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="630" y="70" width="40" height="170" as="geometry"/>
         </mxCell>
         
-        <mxCell id="dpi_cost_val" value="1.11" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="430" y="385" width="40" height="20" as="geometry"/>
+        <mxCell id="cost_hmm" value="0.98" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#F5A623;strokeColor=#D4890F;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="680" y="82" width="40" height="158" as="geometry"/>
         </mxCell>
         
-        <mxCell id="hmm_mse_val" value="0.500" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="240" y="385" width="40" height="20" as="geometry"/>
+        <mxCell id="cost_cbdri" value="0.28" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#BD10E0;strokeColor=#8A0BA6;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="630" y="194" width="40" height="46" as="geometry"/>
         </mxCell>
         
-        <mxCell id="hmm_fnr_val" value="49.7" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="360" y="385" width="40" height="20" as="geometry"/>
+        <!-- 成本模型标签 -->
+        <mxCell id="cost_label1" value="清单法" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="580" y="245" width="40" height="15" as="geometry"/>
         </mxCell>
         
-        <mxCell id="hmm_cost_val" value="0.98" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="480" y="385" width="40" height="20" as="geometry"/>
+        <mxCell id="cost_label2" value="DPI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="630" y="245" width="40" height="15" as="geometry"/>
         </mxCell>
         
-        <mxCell id="cbdri_mse_val" value="0.090" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="290" y="385" width="40" height="20" as="geometry"/>
+        <mxCell id="cost_label3" value="HMM" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="680" y="245" width="40" height="15" as="geometry"/>
         </mxCell>
         
-        <mxCell id="cbdri_fnr_val" value="6.5" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="410" y="385" width="40" height="20" as="geometry"/>
-        </mxCell>
-        
-        <mxCell id="cbdri_cost_val" value="0.28" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="530" y="385" width="40" height="20" as="geometry"/>
+        <mxCell id="cost_label4" value="CBDRI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="630" y="265" width="40" height="15" as="geometry"/>
         </mxCell>
         
         <!-- 图例 -->
-        <mxCell id="legend_title" value="模型图例" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="600" y="100" width="80" height="20" as="geometry"/>
+        <mxCell id="legend_frame" value="" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#f8f8f8;strokeColor=#dddddd;" vertex="1" parent="1">
+          <mxGeometry x="300" y="280" width="220" height="80" as="geometry"/>
         </mxCell>
         
-        <mxCell id="legend_checklist" value="清单法" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="620" y="130" width="50" height="20" as="geometry"/>
+        <mxCell id="legend_title" value="模型图例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="285" width="220" height="20" as="geometry"/>
         </mxCell>
         
-        <mxCell id="legend_checklist_color" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=5;fillColor=#4A90E2;strokeColor=#2D6DB5;" vertex="1" parent="1">
-          <mxGeometry x="600" y="130" width="15" height="15" as="geometry"/>
+        <!-- 图例项目 -->
+        <mxCell id="legend_checklist" value="清单法" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="350" y="310" width="50" height="20" as="geometry"/>
         </mxCell>
         
-        <mxCell id="legend_dpi" value="DPI+阈值法" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="620" y="155" width="70" height="20" as="geometry"/>
+        <mxCell id="legend_checklist_color" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=8;fillColor=#4A90E2;strokeColor=#2D6DB5;" vertex="1" parent="1">
+          <mxGeometry x="320" y="310" width="20" height="20" as="geometry"/>
         </mxCell>
         
-        <mxCell id="legend_dpi_color" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=5;fillColor=#50E3C2;strokeColor=#2BB197;" vertex="1" parent="1">
-          <mxGeometry x="600" y="155" width="15" height="15" as="geometry"/>
+        <mxCell id="legend_dpi" value="DPI+阈值法" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="470" y="310" width="70" height="20" as="geometry"/>
         </mxCell>
         
-        <mxCell id="legend_hmm" value="静态HMM" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="620" y="180" width="60" height="20" as="geometry"/>
+        <mxCell id="legend_dpi_color" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=8;fillColor=#50E3C2;strokeColor=#2BB197;" vertex="1" parent="1">
+          <mxGeometry x="440" y="310" width="20" height="20" as="geometry"/>
         </mxCell>
         
-        <mxCell id="legend_hmm_color" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=5;fillColor=#F5A623;strokeColor=#D4890F;" vertex="1" parent="1">
-          <mxGeometry x="600" y="180" width="15" height="15" as="geometry"/>
+        <mxCell id="legend_hmm" value="静态HMM" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="350" y="335" width="60" height="20" as="geometry"/>
         </mxCell>
         
-        <mxCell id="legend_cbdri" value="CBDRI (本文)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="620" y="205" width="80" height="20" as="geometry"/>
+        <mxCell id="legend_hmm_color" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=8;fillColor=#F5A623;strokeColor=#D4890F;" vertex="1" parent="1">
+          <mxGeometry x="320" y="335" width="20" height="20" as="geometry"/>
         </mxCell>
         
-        <mxCell id="legend_cbdri_color" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=5;fillColor=#BD10E0;strokeColor=#8A0BA6;" vertex="1" parent="1">
-          <mxGeometry x="600" y="205" width="15" height="15" as="geometry"/>
+        <mxCell id="legend_cbdri" value="CBDRI (本文)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="470" y="335" width="80" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend_cbdri_color" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=8;fillColor=#BD10E0;strokeColor=#8A0BA6;" vertex="1" parent="1">
+          <mxGeometry x="440" y="335" width="20" height="20" as="geometry"/>
+        </mxCell>
+        
+        <!-- 性能提升标注 -->
+        <mxCell id="improvement_note" value="✓ CBDRI在三个指标上均表现最优：MSE降低43.0%，FNR降低72.6%，合规成本降低72.0%" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="200" y="380" width="450" height="30" as="geometry"/>
         </mxCell>
         
       </root>
