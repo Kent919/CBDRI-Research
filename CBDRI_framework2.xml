@@ -1,0 +1,65 @@
+<mxfile>
+  <diagram name="CBDRI Framework">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- 中央标题 -->
+        <mxCell value="CBDRI 三维动态风险量化框架" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8ff;strokeColor=#0066cc;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="360" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- 维度1：加密流量（技术感知） -->
+        <mxCell id="2" value="&lt;b&gt;加密流量维度&lt;/b&gt;&#xa;TLS 1.3 盲检测模型&#xa;输出：P₀ = P(E|F)" style="text;strokeColor=#0066cc;fillColor=#e6f3ff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="90" width="180" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- 维度2：国际规则（制度调节） -->
+        <mxCell id="3" value="&lt;b&gt;国际规则维度&lt;/b&gt;&#xa;制度耦合系数 ICC&#xa;输出：ICC(c,r)" style="text;strokeColor=#ff9900;fillColor=#fff2e6;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="90" width="180" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- 维度3：容器主体（行为推理） -->
+        <mxCell id="4" value="&lt;b&gt;容器主体维度&lt;/b&gt;&#xa;贝叶斯在线更新&#xa;输出：Rₜ" style="text;strokeColor=#00cc66;fillColor=#e6ffe6;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="90" width="180" height="70" as="geometry"/>
+        </mxCell>
+        
+        <!-- 箭头：三维输出指向中央处理 -->
+        <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#0066cc;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#ff9900;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#00cc66;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 中央处理：制度调节 → 先验调整 → 贝叶斯更新 → CBDRI -->
+        <mxCell id="6" value="先验调整&#xa;P′₀ = σ(⋯)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2e6;strokeColor=#ff9900;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="240" y="200" width="100" height="50" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="7" value="贝叶斯累积&#xa;Rₜ = ⋯" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6ffe6;strokeColor=#00cc66;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="350" y="200" width="100" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- 箭头：先验 → 贝叶斯 -->
+        <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#333333;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- 最终输出 -->
+        <mxCell id="8" value="&lt;b&gt;CBDRI 综合风险指数&lt;/b&gt;&#xa;R = P(E|{e₁…eₜ}, ICC, F)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#cc0000;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="270" y="280" width="220" height="50" as="geometry"/>
+        </mxCell>
+        
+        <!-- 箭头：贝叶斯 → 输出 -->
+        <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#cc0000;dashed=1;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
