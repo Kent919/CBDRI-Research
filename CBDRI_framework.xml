@@ -1,12 +1,56 @@
 <mxfile>
-  <diagram name="Test">
+  <diagram name="CBDRI Framework">
     <mxGraphModel>
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
-        <mxCell id="2" value="Hello World" style="rounded=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="200" y="100" width="120" height="40" as="geometry"/>
-        </mxCell>
+        
+        <!-- Central Node -->
+        <mxCell id="2" value="跨境数据风险指数 (CBDRI)" 
+                style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8ff;strokeColor=#0066cc;fontSize=16;fontStyle=1;" 
+                vertex="1" parent="1" 
+                geometry='&lt;mxGeometry x="250" y="40" width="200" height="50" as="geometry"/&gt;' />
+        
+        <!-- Dimension 1 -->
+        <mxCell id="3" value="【技术感知】&#xa;加密流量分析&#xa;P₀ = P(E|F)" 
+                style="text;whiteSpace=wrap;html=1;fillColor=#e6f3ff;strokeColor=#0066cc;rounded=1;" 
+                vertex="1" parent="1" 
+                geometry='&lt;mxGeometry x="60" y="120" width="140" height="80" as="geometry"/&gt;' />
+        
+        <!-- Dimension 2 -->
+        <mxCell id="4" value="【行为推理】&#xa;贝叶斯更新&#xa;Rₜ = f(Rₜ₋₁, eₜ)" 
+                style="text;whiteSpace=wrap;html=1;fillColor=#e6ffe6;strokeColor=#00cc66;rounded=1;" 
+                vertex="1" parent="1" 
+                geometry='&lt;mxGeometry x="250" y="120" width="140" height="80" as="geometry"/&gt;' />
+        
+        <!-- Dimension 3 -->
+        <mxCell id="5" value="【制度调节】&#xa;ICC(c,r)&#xa;规则量化" 
+                style="text;whiteSpace=wrap;html=1;fillColor=#fff2e6;strokeColor=#ff9900;rounded=1;" 
+                vertex="1" parent="1" 
+                geometry='&lt;mxGeometry x="440" y="120" width="140" height="80" as="geometry"/&gt;' />
+        
+        <!-- Output -->
+        <mxCell id="6" value="综合风险指数 Rₜ" 
+                style="text;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#cc0000;rounded=1;fontStyle=1;" 
+                vertex="1" parent="1" 
+                geometry='&lt;mxGeometry x="270" y="240" width="160" height="40" as="geometry"/&gt;' />
+
+        <!-- Arrows -->
+        <mxCell id="7" edge="1" source="3" target="2" parent="1" 
+                style="edgeStyle=orthogonalEdgeStyle;endArrow=blockThin;strokeColor=#000000;" 
+                geometry='&lt;mxGeometry relative="1" as="geometry"/&gt;' />
+        
+        <mxCell id="8" edge="1" source="4" target="2" parent="1" 
+                style="edgeStyle=orthogonalEdgeStyle;endArrow=blockThin;strokeColor=#000000;" 
+                geometry='&lt;mxGeometry relative="1" as="geometry"/&gt;' />
+        
+        <mxCell id="9" edge="1" source="5" target="2" parent="1" 
+                style="edgeStyle=orthogonalEdgeStyle;endArrow=blockThin;strokeColor=#000000;" 
+                geometry='&lt;mxGeometry relative="1" as="geometry"/&gt;' />
+        
+        <mxCell id="10" edge="1" source="2" target="6" parent="1" 
+                style="edgeStyle=orthogonalEdgeStyle;endArrow=blockThin;strokeColor=#000000;" 
+                geometry='&lt;mxGeometry relative="1" as="geometry"/&gt;' />
       </root>
     </mxGraphModel>
   </diagram>
