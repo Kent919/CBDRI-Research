@@ -9,22 +9,50 @@
         <mxCell value="跨境数据风险指数 (CBDRI)&#xa;R_t = f(P'(E|F), ICC, e_{1:t})" 
                 style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8ff;strokeColor=#0066cc;fontSize=16;fontStyle=1;" 
                 vertex="1" parent="1" 
-                geometry="&lt;mxGeometry x=&quot;240&quot; y=&quot;30&quot; width=&quot;320&quot; height=&quot;50&quot; as=&quot;geometry&quot;/&gt;"/>
+                geometry='&lt;mxGeometry x="240" y="30" width="320" height="50" as="geometry"/&gt;' />
 
         <!-- Dimension 1: Encrypted Traffic -->
         <mxCell value="【技术感知】&#xa;加密流量维度&#xa;应对：检测盲区&#xa;&#xa;TLS 1.3盲检测模型&#xa;输出外泄概率先验：&#xa;P₀ = P(E|F)&#xa;&#xa;方法：XGBoost-HMM" 
                 style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;html=1;fillColor=#e6f3ff;strokeColor=#0066cc;" 
                 vertex="1" parent="1" 
-                geometry="&lt;mxGeometry x=&quot;50&quot; y=&quot;110&quot; width=&quot;190&quot; height=&quot;140&quot; as=&quot;geometry&quot;/&gt;"/>
+                geometry='&lt;mxGeometry x="50" y="110" width="190" height="140" as="geometry"/&gt;' />
 
         <!-- Dimension 2: Container -->
         <mxCell value="【行为推理】&#xa;容器主体维度&#xa;应对：拼接外泄&#xa;&#xa;贝叶斯在线更新&#xa;Rₜ = P(E|eₜ)·Rₜ₋₁ / [P(E|eₜ)·Rₜ₋₁ + (1−P(E|eₜ))·(1−Rₜ₋₁)]&#xa;&#xa;初始调整：&#xa;P'₀ = σ(log(P₀/(1−P₀)) + α·(1−ICC))" 
                 style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;html=1;fillColor=#e6ffe6;strokeColor=#00cc66;" 
                 vertex="1" parent="1" 
-                geometry="&lt;mxGeometry x=&quot;265&quot; y=&quot;110&quot; width=&quot;210&quot; height=&quot;170&quot; as=&quot;geometry&quot;/&gt;"/>
+                geometry='&lt;mxGeometry x="265" y="110" width="210" height="170" as="geometry"/&gt;' />
 
         <!-- Dimension 3: Rules -->
         <mxCell value="【制度调节】&#xa;国际规则维度&#xa;应对：规则碎片化&#xa;&#xa;制度耦合系数 (ICC)&#xa;ICC(c,r) = α·S(c) + β·C(c,r) + γ·P(r)&#xa;&#xa;输出：监管权重 Wᵢ, ICCᵢⱼ" 
                 style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;html=1;fillColor=#fff2e6;strokeColor=#ff9900;" 
                 vertex="1" parent="1" 
-                geometry="&lt;mxGeometry x=&quot;490&quot; y=&quot;110&quot;
+                geometry='&lt;mxGeometry x="490" y="110" width="190" height="140" as="geometry"/&gt;' />
+
+        <!-- Arrows to CBDRI Center -->
+        <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;strokeColor=#000000;endArrow=blockThin;" 
+                edge="1" parent="1" source="2" target="1" 
+                geometry='&lt;mxGeometry relative="1" as="geometry"/&gt;' />
+
+        <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;strokeColor=#000000;endArrow=blockThin;" 
+                edge="1" parent="1" source="3" target="1" 
+                geometry='&lt;mxGeometry relative="1" as="geometry"/&gt;' />
+
+        <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;strokeColor=#000000;endArrow=blockThin;" 
+                edge="1" parent="1" source="4" target="1" 
+                geometry='&lt;mxGeometry relative="1" as="geometry"/&gt;' />
+
+        <!-- Output Block -->
+        <mxCell value="CBDRI综合风险指数&#xa;Rₜ = f(P'(E|F), ICC, e_{1:t})" 
+                style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=1;html=1;fillColor=#ffe6e6;strokeColor=#cc0000;fontSize=14;fontStyle=1;" 
+                vertex="1" parent="1" 
+                geometry='&lt;mxGeometry x="270" y="300" width="260" height="50" as="geometry"/&gt;' />
+
+        <!-- Arrow from CBDRI to Output -->
+        <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;strokeColor=#000000;endArrow=blockThin;" 
+                edge="1" parent="1" source="1" target="5" 
+                geometry='&lt;mxGeometry relative="1" as="geometry"/&gt;' />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
